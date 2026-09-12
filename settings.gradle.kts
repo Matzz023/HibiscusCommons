@@ -1,7 +1,3 @@
-plugins {
-    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
-}
-
 pluginManagement {
     val userdevVersion: String by settings
     repositories {
@@ -11,6 +7,10 @@ pluginManagement {
     plugins {
         id("io.papermc.paperweight.userdev") version userdevVersion
     }
+}
+
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
 rootProject.name = "HibiscusCommons"
